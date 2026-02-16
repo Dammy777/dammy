@@ -1,6 +1,28 @@
-body { font-family: Arial; padding: 20px; background: #f4f6f8; }
-.container { background: white; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-input { margin: 5px; padding: 8px; }
-button { margin: 3px; padding: 6px 10px; background: #007bff; color: white; border: none; cursor: pointer; }
-button:hover { background: #0056b3; }
-.card { background: white; padding: 10px; margin: 10px 0; border-radius: 6px; }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full CRUD Placeholder API Demo</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Full CRUD Demo Using JSONPlaceholder</h1>
+
+<div class="container">
+<h2>Create / Update Student</h2>
+<input id="studentId" placeholder="ID (leave empty to create)" />
+<input id="studentName" placeholder="Student Name" />
+<input id="department" placeholder="Department" />
+<button id="saveBtn">Save</button>
+</div>
+
+<hr>
+
+<h2>Students</h2>
+<div id="students"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
